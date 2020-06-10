@@ -1,5 +1,5 @@
 camel = r"""
-Switching on camera from habitat with camels...
+Look like the camel is walking...
  ___.-''''-.
 /___  @    |
 ',,,,.     |         _.'''''''._
@@ -13,14 +13,14 @@ Switching on camera from habitat with camels...
               ! ; !'',,,',',,,,'!  ;   ;:
              : ;  ! !       ! ! ;  ;   :;
              ; ;   ! !      ! !  ; ;   ;,
-            ; ;    ! !     ! !   ; ;     
+            ; ;    ! !     ! !   ; ;
             ; ;    ! !    ! !     ; ;
            ;,,      !,!   !,!     ;,;
            /_I      L_I   L_I     /_I
 Yey, our little camel is sunbathing!"""
 
 lion = r"""
-Switching on camera from habitat with lions...
+Here is the Lion......
                                                ,w.
                                              ,YWMMw  ,M  ,
                         _.---.._   __..---._.'MMMMMw,wMWmW,
@@ -38,7 +38,7 @@ WMMm__,-'.'     /      _.\      F'''-+,,   ;_,_.dMMMMMMMM[,_ / `=_}
 The lion is croaking!"""
 
 deer = r"""
-Switching on camera from habitat with deers...
+Found the deer...
    /|       |\
 `__\\       //__'
    ||      ||
@@ -63,10 +63,10 @@ Switching on camera from habitat with deers...
            | || |           | |   | |
            |_||_|           |_|   |_|
           /_//_/           /_/   /_/
-Our 'Bambi' looks hungry. Let's go to feed it!"""
+It looks hungry!"""
 
 goose = r"""
-Switching on camera from habitat with lovely goose...
+Its a lovely goose...
 
                                     _
                                 ,-"" "".
@@ -79,10 +79,10 @@ Switching on camera from habitat with lovely goose...
   <`-       (__< <           :
    (__        (_<_<          ;
     `------------------------------------------
-This bird stares intently at you... (Maybe it's time to change the channel?)"""
+This bird stares intently at you..."""
 
 bat = r"""
-Switching on camera from habitat with bats...
+Here is the bat...
 _________________               _________________
  ~-.              \  |\___/|  /              .-~
      ~-.           \ / o o \ /           .-~
@@ -94,10 +94,10 @@ _________________               _________________
            /___      /\   /\      ___\
                 ~-. /  \_/  \ .-~
                    V         V
-It looks like this bat is fine."""
+Is it scarry ?"""
 
 rabbit = r"""
-Switching on camera from habitat with rabbits...
+Found the rabbit...
          ,
         /|      __
        / |   ,-~ /
@@ -113,19 +113,47 @@ Switching on camera from habitat with rabbits...
  /| ;-"~ _  l
 / l/ ,-"~    \
 \//\/      .- \
- Y        /    Y 
+ Y        /    Y
  l       I     !
  ]\      _\    /"\
 (" ~----( ~   Y.  )
-It seems there will be more rabbits soon!"""
+Its looking for food.."""
 
+pengu = r"""
+There is the penguin...
 
-animals = [camel, lion, deer, goose, bat, rabbit]
-N=input("Which habitat # do you need? > ")
+                                    /'```\
+                                   /   @   ==~>
+                                   \      /
+                                    '****'
+                                    |    |
+                                   /      \
+                                  /  ,'',  \
+                                 /   / /    \
+                                |   / /      |
+                                (   | |      )
+                                 \   UU     /
+                                  \________/
+                                   | |  | |
+                                   | |  | |
+                                   \***  \***
+
+Walking to the water....!"""
+
+print("Welcome to the ZOO\nHere are the following animals in cell_0 to cell_6:")
+print("""|  0   |   1  |   2  |   3   |  4  |    5   |    6    |
+|camel | lion | deer | goose | bat | rabbit | penguin |""")
+animals = [camel, lion, deer, goose, bat, rabbit, pengu]
+N=input("Type any Cell number > ")
 # write your code here
-while N=="1" or N=="2" or N=="3" or N=="4" or N=="5" or N=="0":
+while N=="1" or N=="2" or N=="3" or N=="4" or N=="5" or N=="0" or N=="6":
     M= int(N)
     animal=animals[M]
     print(animal)
-    N=input("Which habitat # do you need? > ")
-print("See you!")
+    print("""|  0   |   1  |   2  |   3   |  4  |    5   |    6    |
+|camel | lion | deer | goose | bat | rabbit | penguin |""")
+    N=input("Type another number or type exit > ")
+while N=="exit":
+    print("See you!")
+    break
+X= input()
